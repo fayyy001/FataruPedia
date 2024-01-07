@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .container {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 50px;
+      background-color: #525252;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .sidebar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 190px;
+      height: 100%;
+      background-color: #8e8e8e;
+      border-top-right-radius: 80px;
+      border-bottom-right-radius: 10px;
+    }
+    .sidebar-btn {
+      width: 145px;
+      height: 50px;
+      background-color: #fff;
+      color: #000;
+      font-size: 14px;
+      font-weight: bold;
+      font-family: 'Poppins', sans-serif;
+      border: none;
+      border-radius: 10px;
+      margin-top: 130px;
+      margin-left: 10px;
+      cursor: pointer;
+    }
+
+    .sidebar-btn1,
+    .sidebar-btn2,
+    .sidebar-btn3,
+    .sidebar-btn4,
+    .sidebar-btn5{
+      width: 145px;
+      height: 50px;
+      background-color: #fff;
+      color: #000;
+      font-size: 14px;
+      font-weight: bold;
+      font-family: 'Poppins', sans-serif;
+      border: none;
+      border-radius: 10px;
+      margin-top: 30px;
+      margin-left: 10px;
+      cursor: pointer;
+    }
+
+    .sidebar-btn-logout {
+      width: 145px;
+      height: 50px;
+      background-color: #8e8e8e;
+      color: #fff;
+      font-size: 14px;
+      font-weight: bold;
+      font-family: 'Poppins', sans-serif;
+      border: none;
+      border-radius: 10px;
+      position: absolute;
+      top: 10px;
+      right: 20px;
+      cursor: pointer;
+    }
+
+    /* New styles for the table */
+    .content {
+      margin-left: 200px; /* Adjust the margin to leave space for the sidebar */
+      margin-top: 20px; /* Adjust the margin from the top */
+    }
+
+    .user-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 100px;
+    }
+
+    .user-table th,
+    .user-table td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: left;
+    }
+
+    .user-table th {
+      background-color: #8e8e8e;
+      color: #fff;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <div class="sidebar">
+    <a href="homeadmin.html"><button class="sidebar-btn" onclick="changeColor(this)">Home</button></a>
+    <a href="../../FataruPedia_admin/manageuser.php"><button class="sidebar-btn4" onclick="changeColor(this)">Manage User</button></a>
+    <a href="managekategori.html"><button class="sidebar-btn1" onclick="changeColor(this)">Manage Kategori</button></a>
+    <a href="manageartikel.html"><button class="sidebar-btn2" onclick="changeColor(this)">Manage Artikel</button></a>
+    <a href="managequiz.html"><button class="sidebar-btn3" onclick="changeColor(this)">Manage Quiz</button></a>
+    <a href="managekomen.html"><button class="sidebar-btn5" onclick="changeColor(this)">Manage Komen</button></a>
+  </div>
+  <button class="sidebar-btn-logout" onclick="changeColor(this)">LogOut</button>
+  <div class="container">
+    
+  </div>
+
+  <div class="content">
+    <table class="user-table">
+      <thead>
+        <tr>
+          <th>Judul Kategori</th>
+          <th>Gambar Kategori</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Sejarah Berdiri</td>
+          <td>Gambar sejarah berdiri</td>
+          <td>
+            <img src="assets/images/Smash.png" alt="">
+          </td>
+          
+         
+        </tr>
+        <tr>
+          <td>Masa Kejayaan</td>
+          <td>Kunci Teknik Pukulan Keras || Banyak yang Belum Tau</td>
+          <td><img src="assets/images/pu.png" alt=""></td>
+
+        
+        </tr>
+        
+        <!-- Add more rows as needed -->
+      </tbody>
+    </table>
+  </div>
+
+  <script>
+    function changeColor(button) {
+      // Reset the color and text color of all buttons
+      document.querySelectorAll('.sidebar button').forEach(btn => {
+        btn.style.backgroundColor = '#fff';
+        btn.style.color = '#000';
+      });
+
+      // Set the selected button's color and text color
+      button.style.backgroundColor = '#EE626B';
+      button.style.color = '#fff';
+    }
+  </script>
+
+</body>
+
+</html>

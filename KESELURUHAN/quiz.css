@@ -1,0 +1,94 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.landingpage{
+    display: grid;
+    grid-template-areas: 
+    'nav nav nav nav nav nav'
+    'hero hero hero hero hero hero'
+    'baris1 baris1 baris1 baris1 baris1 baris1'
+    'baris2 baris2 baris2 baris2 baris2 baris2'
+    'baris3 baris3 baris3 baris3 baris3 baris3'
+    'footer footer footer footer footer footer';
+}
+
+.nav{
+    grid-area: nav;
+    padding-top: 20px;
+    position: sticky;
+    top: 0;
+    background-color: #e4e4e4;
+    z-index: 2;
+}
+
+.nav img{
+    width: 170px;
+    float: left;
+    margin-left: 10px;
+    
+}
+
+.nav a{
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    font-family: 'Kumbh Sans', sans-serif;
+    margin-left: 50px;
+    padding-top: 8px;
+    
+}
+
+.nav input{
+    border-radius: 20px;
+    height: 30px;
+    padding-left: 20px;
+    margin-left: 100px;
+    width: 30%;
+    font-size: 17px;
+    background-color: transparent;
+}
+
+.nav button{
+    border-radius: 15px;
+    background-color: transparent;
+    font-size: 15px;
+    width: 6%;
+    height: 30px;
+   margin-left: 120px;
+    margin-right: 6px;
+}
+/* bagian navbar bos */
+
+.skor h6{
+    font-size: 20px;
+    border: 2px solid #000; /* Warna dan lebar border dapat disesuaikan */
+    padding: 10px; /* Memberikan padding untuk memisahkan teks dari border */
+    display: inline-block; /* Membuat border beradaptasi dengan lebar teks */
+    border-radius: 20px;
+    margin-left: 30px;
+    margin-top: 400px;
+}
+
+
+.pentil{
+    background-color: black;
+    color: white;
+    width: 150px;
+    height: 50px;
+    font-size: 15px;
+    border-radius: 30px;
+    margin-left: 1000px;
+    margin-top: 20px;
+}
+
+
+.footer{
+    grid-area: footer;
+    background-color: #949494;
+    height: 70px;
+    width: 1349px;
+    margin-top: 100px;
+}   

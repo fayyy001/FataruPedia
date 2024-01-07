@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .container {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 50px;
+      background-color: #525252;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .sidebar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 190px;
+      height: 100%;
+      background-color: #8e8e8e;
+      border-top-right-radius: 80px;
+      border-bottom-right-radius: 10px;
+    }
+
+    .sidebar-btn {
+      width: 145px;
+      height: 50px;
+      background-color: #fff;
+      color: #000;
+      font-size: 14px;
+      font-weight: bold;
+      font-family: 'Poppins', sans-serif;
+      border: none;
+      border-radius: 10px;
+      margin-top: 130px;
+      margin-left: 10px;
+      cursor: pointer;
+    }
+
+    .sidebar-btn1,
+    .sidebar-btn2,
+    .sidebar-btn3,
+    .sidebar-btn4,
+    .sidebar-btn5 {
+      width: 145px;
+      height: 50px;
+      background-color: #fff;
+      color: #000;
+      font-size: 14px;
+      font-weight: bold;
+      font-family: 'Poppins', sans-serif;
+      border: none;
+      border-radius: 10px;
+      margin-top: 30px;
+      margin-left: 10px;
+      cursor: pointer;
+    }
+
+    .sidebar-btn-logout {
+      width: 145px;
+      height: 50px;
+      background-color: #8e8e8e;
+      color: #fff;
+      font-size: 14px;
+      font-weight: bold;
+      font-family: 'Poppins', sans-serif;
+      border: none;
+      border-radius: 10px;
+      position: absolute;
+      top: 15px;
+      right: 20px;
+      cursor: pointer;
+    }
+
+    img.footer-image {
+      height: 200px;
+      width: 100%;
+      border-top-left-radius: 75px;
+      border-top-right-radius: 75px;
+    }
+
+    img.admin-image {
+      height: 350px; /* Adjust the height as needed */
+      width: 400px; /* Adjust the width as needed */
+      margin: 222px 0 0; /* Adjust the vertical position */
+      margin-left: 870px; /* Adjust the horizontal position */
+    }
+
+    .welcome-text {
+      font-size: 40px;
+      font-weight: bold;
+      color: #000;
+      position: fixed;
+      top: 14%;
+      left: 45%;
+      transform: translate(-50%, -50%);
+    }
+
+    .guide-text {
+      font-size: 28px;
+      font-style: normal;
+      font-family: "Poppins",sans-serif;
+      font-weight: normal; /* Adjust the font weight */
+      color: #000;
+      position: fixed;
+      top: 25%;
+      left: 36%;
+      transform: translate(-50%, -50%);
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="sidebar">
+    <a href="admin1.html"><button class="sidebar-btn" onclick="changeColor(this)">Home</button></a>
+    <a href="manage user.html"><button class="sidebar-btn4" onclick="changeColor(this)">Manage User</button></a>
+    <a href="manageMateri.html"><button class="sidebar-btn1" onclick="changeColor(this)">Manage Kategori</button></a>
+    <a href="manageVidio.html"><button class="sidebar-btn2" onclick="changeColor(this)">Manage Artikel</button></a>
+    <a href="manageLaporan.html"><button class="sidebar-btn3" onclick="changeColor(this)">Manage Quiz</button></a>
+    <a href="manageLaporan.html"><button class="sidebar-btn5" onclick="changeColor(this)">Manage Komen</button></a>
+  </div>
+  <button class="sidebar-btn-logout" onclick="changeColor(this)">LogOut</button>
+  <div class="container">
+    
+  </div>
+  <div>
+    <img class="admin-image" src="../asset/uwong.png" alt="Admin Image">
+    <div class="welcome-text">Selamat Datang Di Admin FP</div>
+    <div class="guide-text">let's set up our website</div>
+  </div>
+
+  <script>
+    function changeColor(button) {
+      // Reset the color and text color of all buttons
+      document.querySelectorAll('.sidebar button').forEach(btn => {
+        btn.style.backgroundColor = '#fff';
+        btn.style.color = '#000';
+      });
+
+      // Set the selected button's color and text color
+      button.style.backgroundColor = '#EE626B';
+      button.style.color = '#fff';
+    }
+  </script>
+
+</body>
+
+</html>

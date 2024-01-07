@@ -1,0 +1,1001 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>quiz</title>
+    <link rel="stylesheet" href="quiz.css">
+    <link rel="icon" href="../asset/logofawasygy.png">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@600&display=swap');
+      </style>  
+   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@600&family=Kumbh+Sans:wght@500&display=swap');
+  </style>
+</head>
+<body>
+    
+     <div class="landingpage">
+        <div class="nav">
+            <img src="../asset/logo2.png">
+            <a href="homepage.html">Homepage</a>
+            <a href="kategori.html">Kategori</a>
+            <a href="quiz.html">Quiz</a>
+            <input type="search" name="search" placeholder="Search...">
+            <a href="landingpage.html" ><button>Logout</button></a>
+        </div>
+        <!--  end bagian nav -->
+      
+    <style>
+
+.parent h1{
+  font-family: 'Kumbh Sans', sans-serif;
+  margin-left: 100px;
+  margin-top: 50px;
+  font-size: 50px;
+}
+        .baris1 {
+            display: flex;
+        }/* baris 1 soal  */
+        .soal1{
+          background-color: black;
+          color: white;
+          text-align: center;
+         border-radius: 20px;
+         margin-left: 30px;
+         margin-top: 80px;
+         padding-top: 20px;
+         font-family: 'Kumbh Sans', sans-serif;
+        }
+
+        .jawaban{
+          background-color: #949494;
+          width: 600px;
+          border-bottom-left-radius: 20px;
+          border-bottom-right-radius: 20px;
+          height: 170px;
+        }
+
+        .jawabanaa {
+    grid-area: jawabana;
+    float: left;
+}
+
+.jawabanb{
+  display: flex;
+
+}
+
+.jawabanc{
+  float: left;
+}
+
+.jawaband{
+  display: flex;
+}
+
+.buttona {
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 250px;
+    height: 40px;
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+
+  .buttonb{
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 250px;
+    height: 40px;
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+
+  .buttonc{
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 250px;
+    height: 40px;
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+
+  .buttond{
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 250px;
+    height: 40px;
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+
+  .buttona.clicked {
+    background-color: rgb(76, 255, 85);
+  }
+
+  .buttonb.clicked {
+    background-color: rgb(255, 0, 0);
+  }
+
+  .buttonc.clicked {
+    background-color: rgb(255, 0, 0);
+  }
+
+  .buttond.clicked {
+    background-color: rgb(255, 0, 0);
+  }
+
+                                                        /* END SOAL 1 */
+
+  .soal2{
+    background-color: black;
+          color: white;
+          text-align: center;
+         border-radius: 20px;
+         margin-left: 30px;
+         margin-top: 80px;
+         padding-top: 20px;
+         font-family: 'Kumbh Sans', sans-serif;
+  }
+
+
+  .jawaban2{
+    background-color: #949494;
+          width: 600px;
+          border-bottom-left-radius: 20px;
+          border-bottom-right-radius: 20px;
+          height: 170px;
+  }
+
+  .jawabana2{
+    float: left;
+  }
+
+  .jawabanb2{
+    display: flex;
+  }
+
+  .jawabanc2{
+    float: left;
+  }
+
+  .jawaband2{
+    display: flex;
+  }
+
+  .buttona2{
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 250px;
+    height: 40px;
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+
+  .buttonb2{
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 250px;
+    height: 40px;
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+
+  .buttonc2{
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 250px;
+    height: 40px;
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+
+  .buttond2{
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 250px;
+    height: 40px;
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+
+  .buttona2.clicked {
+    background-color: rgb(255, 0, 0);
+  }
+
+  .buttonb2.clicked {
+    background-color: rgb(43, 255, 0);
+  }
+
+  .buttonc2.clicked {
+    background-color: rgb(255, 0, 0);
+  }
+
+  .buttond2.clicked {
+    background-color: rgb(255, 0, 0);
+  }
+/* end jawaban a */
+                                                        /* END BARIS 1 */
+
+                                                        /* START BARIS 2 */
+.baris2{
+  display: flex;
+}
+
+.soal3{
+  background-color: black;
+          color: white;
+          text-align: center;
+         border-radius: 20px;
+         margin-left: 30px;
+         margin-top: 80px;
+         padding-top: 42px;
+         font-family: 'Kumbh Sans', sans-serif;
+        }
+
+        .jawaban3{
+          background-color: #949494;
+          width: 600px;
+          border-bottom-left-radius: 20px;
+          border-bottom-right-radius: 20px;
+          height: 172px;
+        }
+
+.jawabana3{
+  float: left;
+}
+
+.jawabanb3{
+  display: flex;
+}
+
+.jawabanc3{
+  float: left;
+}
+
+.jawaband3{
+  display: flex;
+}
+
+.buttona3{
+  background-color: white;
+    color: black;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 250px;
+    height: 40px;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.buttonb3{
+  background-color: white;
+    color: black;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 250px;
+    height: 40px;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.buttonc3{
+  background-color: white;
+    color: black;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 250px;
+    height: 40px;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.buttond3{
+  background-color: white;
+    color: black;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 250px;
+    height: 40px;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.buttona3.clicked {
+    background-color: rgb(255, 0, 0);
+  }
+
+  .buttonb3.clicked {
+    background-color: rgb(43, 255, 0);
+  }
+
+  .buttonc3.clicked {
+    background-color: rgb(255, 0, 0);
+  }
+
+  .buttond3.clicked {
+    background-color: rgb(255, 0, 0);
+  }
+                                                      /* END SOAL 3 */
+
+.soal4{
+  background-color: black;
+          color: white;
+          text-align: center;
+         border-radius: 20px;
+         margin-left: 30px;
+         margin-top: 80px;
+         padding-top: 20px;
+         font-family: 'Kumbh Sans', sans-serif;
+}                  
+
+.jawaban4{
+          background-color: #949494;
+          width: 600px;
+          border-bottom-left-radius: 20px;
+          border-bottom-right-radius: 20px;
+          height: 170px;
+        }
+
+.jawabana4{
+  float: left;
+}
+
+.jawabanb4{
+  display: flex;
+}
+
+.jawabanc4{
+  float: left;
+}
+
+.jawaband4{
+  display: flex;
+}
+
+.buttona4{
+  background-color: white;
+    color: black;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 250px;
+    height: 40px;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.buttonb4{
+  background-color: white;
+    color: black;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 250px;
+    height: 40px;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.buttonc4{
+  background-color: white;
+    color: black;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 250px;
+    height: 40px;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.buttond4{
+  background-color: white;
+    color: black;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 250px;
+    height: 40px;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.buttona4.clicked {
+    background-color: rgb(255, 0, 0);
+  }
+
+  .buttonb4.clicked {
+    background-color: rgb(43, 255, 0);
+  }
+
+  .buttonc4.clicked {
+    background-color: rgb(255, 0, 0);
+  }
+
+  .buttond4.clicked {
+    background-color: rgb(255, 0, 0);
+  }
+                                                      /* END SOAL 4 */
+                                                    /* START SOAL 5 */
+   .soal5{
+  background-color: black;
+          color: white;
+          text-align: center;
+         border-radius: 20px;
+        margin-left: -630px;
+         margin-top: 80px;
+         padding-top: 42px;
+         font-family: 'Kumbh Sans', sans-serif;
+         position: absolute;
+        }
+
+        .jawaban5{
+          background-color: #949494;
+          width: 600px;
+          border-bottom-left-radius: 20px;
+          border-bottom-right-radius: 20px;
+          height: 172px;
+        }
+
+.jawabana5{
+  float: left;
+}
+
+.jawabanb5{
+  display: flex;
+}
+
+.jawabanc5{
+  float: left;
+}
+
+.jawaband5{
+  display: flex;
+}
+
+.buttona5{
+  background-color: white;
+    color: black;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 250px;
+    height: 40px;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.buttonb5{
+  background-color: white;
+    color: black;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 250px;
+    height: 40px;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.buttonc5{
+  background-color: white;
+    color: black;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 250px;
+    height: 40px;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.buttond5{
+  background-color: white;
+    color: black;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 250px;
+    height: 40px;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.buttona5.clicked {
+    background-color: rgb(0, 255, 0);
+  }
+
+  .buttonb5.clicked {
+    background-color: rgb(255, 0, 0);
+  }
+
+  .buttonc5.clicked {
+    background-color: rgb(255, 0, 0);
+  }
+
+  .buttond5.clicked {
+    background-color: rgb(255, 0, 0);
+  }
+                                                      /* END SOAL 5 */
+
+ /* START SOAL 5 */
+ .soal6{
+  background-color: black;
+          color: white;
+          text-align: center;
+         border-radius: 20px;
+        margin-left: 1px;
+         margin-top: 80px;
+         padding-top: 65px;
+         font-family: 'Kumbh Sans', sans-serif;
+         position: absolute;
+        }
+
+        .jawaban6{
+          background-color: #949494;
+          width: 600px;
+          border-bottom-left-radius: 20px;
+          border-bottom-right-radius: 20px;
+          height: 172px;
+        }
+
+.jawabana6{
+  float: left;
+}
+
+.jawabanb6{
+  display: flex;
+}
+
+.jawabanc6{
+  float: left;
+}
+
+.jawaband6{
+  display: flex;
+}
+
+.buttona6{
+  background-color: white;
+    color: black;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 250px;
+    height: 40px;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.buttonb6{
+  background-color: white;
+    color: black;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 250px;
+    height: 40px;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.buttonc6{
+  background-color: white;
+    color: black;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 250px;
+    height: 40px;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.buttond6{
+  background-color: white;
+    color: black;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 250px;
+    height: 40px;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.buttona6.clicked {
+    background-color: rgb(0, 255, 0);
+  }
+
+  .buttonb6.clicked {
+    background-color: rgb(255, 0, 0);
+  }
+
+  .buttonc6.clicked {
+    background-color: rgb(255, 0, 0);
+  }
+
+  .buttond6.clicked {
+    background-color: rgb(255, 0, 0);
+  }
+                                                      /* END SOAL 5 */
+
+
+
+
+    </style>
+</head>
+<body>
+    <!-- start parret -->
+    <div class="parent">
+        <h1>Selamat Mengerjakan Quiz</h1>
+        <!-- start baris 1 -->
+        <div class="baris1">
+              <div class="soal1">
+                <h3>1.Kapan masa kejayaan kerajaan taruma negara...</h3>
+                <div class="jawaban">
+                    <div class="jawabanaa">
+                        <button class="buttona" id="buttona">Abad 5 sampai Abad 7 Masehi</button>
+                    </div>
+                    <div class="jawabanb">
+                        <button class="buttonb" id="buttonb">Abad 3 sampai Abad 4 Masehi</button>
+                    </div>
+                    <div class="jawabanc">
+                        <button class="buttonc" id="buttonc">Abad 6 sampai Abad 8 Masehi</button>
+                    </div>
+                    <div class="jawaband">
+                        <button class="buttond" id="buttond">Tahun 1945 sampai 2008</button>
+                    </div>
+                    <!-- end jawaban d -->
+                </div>
+                <!-- end jawaban -->
+              </div>
+              <!-- end soal 1 -->
+              <div class="soal2">
+                <h3>2. Kapan waktu berdiri nya Kerajaan Tarumanegara...</h3>
+                <div class="jawaban2">
+                    <div class="jawabana2">
+                        <button class="buttona2" id="buttona2">Abad 3 Masehi</button>
+                    </div>
+                    <div class="jawabanb2">
+                        <button class="buttonb2" id="buttonb2">Abad 5 Masehi</button>
+                    </div>
+                    <div class="jawabanc2">
+                        <button class="buttonc2" id="buttonc2">Abad 6 Masehi</button>
+                    </div>
+                    <div class="jawaband2">
+                        <button class="buttond2" id="buttond2">Abad 7 Masehi</button>
+                    </div>
+                    <!-- end jawaban d -->
+                </div>
+                
+              </div>
+        </div>
+        <!-- end baris 1 -->
+        <!-- start baris 2 -->
+        <div class="baris2">
+          <div class="soal3">
+            <h3>3.Dimana letak Kerajaan Tarumanegara...</h3>
+            <div class="jawaban3">
+                <div class="jawabana3">
+                    <button class="buttona3" id="buttona3">Jawa Timur</button>
+                </div>
+                <div class="jawabanb3">
+                    <button class="buttonb3" id="buttonb3">Jawa Barat</button>
+                </div>
+                <div class="jawabanc3">
+                    <button class="buttonc3" id="buttonc3">Jawa Tengah</button>
+                </div>
+                <div class="jawaband3">
+                    <button class="buttond3" id="buttond3">Kalimantan Barat</button>
+                </div>
+                <!-- end jawaban d -->
+            </div>
+        </div>
+
+
+
+        <div class="soal4">
+          <h3>4.Siapa Raja yang membangun Irigasi yang canggih pada masa <br> azkejayaan Kerajaan Tarumanegara...</h3>
+          <div class="jawaban4">
+              <div class="jawabana4">
+                  <button class="buttona4" id="buttona4">Raja Jayasingawarman</button>
+              </div>
+              <div class="jawabanb4">
+                  <button class="buttonb4" id="buttonb4">Raja Purnawarman</button>
+              </div>
+              <div class="jawabanc4">
+                  <button class="buttonc4" id="buttonc4">Raja Wisnuwarman</button>
+              </div>
+              <div class="jawaband4">
+                  <button class="buttond4" id="buttond4"> Raden Wijaya</button>
+              </div>
+              <!-- end jawaban d -->
+          </div>
+          
+        <!-- end baris 2 -->
+        <!-- start baris 3 -->
+        <div class="baris3">
+         
+          <div class="soal5">
+            <h3>5.Di bawah ini yang termasuk salah satu teori penyebab runtuh nya <br>Kerajaan Tarumanegara adalah...</h3>
+            <div class="jawaban5">
+                <div class="jawabana5">
+                    <button class="buttona5" id="buttona5">Di invasi kerajaan tetangga yang lebih kuat</button>
+                </div>
+                <div class="jawabanb5">
+                    <button class="buttonb5" id="buttonb5">Runtuh tanpa alasan yang 
+                      jelas</button>
+                </div>
+                <div class="jawabanc5">
+                    <button class="buttonc5" id="buttonc5">Karena terkena bencana alam</button>
+                </div>
+                <div class="jawaband5">
+                    <button class="buttond5" id="buttond5">Di bubarkan</button>
+                </div>
+                <!-- end jawaban d -->
+            </div>
+            <!-- end jawaban -->
+          </div><!-- end soal 5 -->
+
+
+          <div class="soal6">
+            <h3>6.Dimana pusat Kekuasaan kerajaan Tarumangera...</h3>
+            <div class="jawaban6">
+                <div class="jawabana6">
+                    <button class="buttona6" id="buttona6">Di sekitar sungai citarum</button>
+                </div>
+                <div class="jawabanb6">
+                    <button class="buttonb6" id="buttonb6">Di sekitar Tugu Monas</button>
+                </div>
+                <div class="jawabanc6">
+                    <button class="buttonc6" id="buttonc6">Di sekitar sungai Benggawan solo</button>
+                </div>
+                <div class="jawaband6">
+                    <button class="buttond6" id="buttond6">Di sekitar sungai kapuas</button>
+                </div><!-- end jawaban d -->
+            </div>  <!-- end jawaban -->
+          </div><!-- end soal 5 -->
+
+        </div><!-- penutup baris 3 -->
+        <!-- end baris 3 -->
+
+        
+    </div>
+
+   
+
+    
+    <script>
+                                                      //START SOAL 1 
+        // start java jawaban a
+        const buttona = document.getElementById('buttona');
+        buttona.addEventListener('click', function() {
+          this.classList.add('clicked');
+        });
+
+        // start java jawaban b
+        const buttonb = document.getElementById('buttonb');
+        buttonb.addEventListener('click', function() {
+          this.classList.add('clicked');
+        });
+
+        // start java jawaban c
+        const buttonc = document.getElementById('buttonc');
+        buttonc.addEventListener('click', function() {
+          this.classList.add('clicked');
+        });
+
+
+         // start java jawaban c
+        const buttond = document.getElementById('buttond');
+        buttond.addEventListener('click', function() {
+          this.classList.add('clicked');
+        });
+                                                  // END SOAL 1
+
+                                                  //START SOAL 2
+        // start java jawaban a
+        const buttona2 = document.getElementById('buttona2');
+        buttona2.addEventListener('click', function() {
+          this.classList.add('clicked');
+        });
+
+        // start java jawaban b
+        const buttonb2 = document.getElementById('buttonb2');
+        buttonb2.addEventListener('click', function() {
+          this.classList.add('clicked');
+        });
+
+        // start java jawaban c
+        const buttonc2 = document.getElementById('buttonc2');
+        buttonc2.addEventListener('click', function() {
+          this.classList.add('clicked');
+        });
+
+
+         // start java jawaban c
+        const buttond2 = document.getElementById('buttond2');
+        buttond2.addEventListener('click', function() {
+          this.classList.add('clicked');
+        });
+                                                  // END SOAL 2
+                                                  
+                                                  // START SOAL 3
+// start java jawaban a
+const buttona3 = document.getElementById('buttona3');
+        buttona3.addEventListener('click', function() {
+          this.classList.add('clicked');
+        });
+
+        // start java jawaban b
+        const buttonb3 = document.getElementById('buttonb3');
+        buttonb3.addEventListener('click', function() {
+          this.classList.add('clicked');
+        });
+
+        // start java jawaban c
+        const buttonc3 = document.getElementById('buttonc3');
+        buttonc3.addEventListener('click', function() {
+          this.classList.add('clicked');
+        });
+
+
+         // start java jawaban c
+        const buttond3 = document.getElementById('buttond3');
+        buttond3.addEventListener('click', function() {
+          this.classList.add('clicked');
+        });
+
+
+                                                  // END SOAL 3
+                                                  // START SOAL 4
+  // start java jawaban a
+  const buttona4 = document.getElementById('buttona4');
+        buttona4.addEventListener('click', function() {
+          this.classList.add('clicked');
+        });
+
+        // start java jawaban b
+        const buttonb4 = document.getElementById('buttonb4');
+        buttonb4.addEventListener('click', function() {
+          this.classList.add('clicked');
+        });
+
+        // start java jawaban c
+        const buttonc4 = document.getElementById('buttonc4');
+        buttonc4.addEventListener('click', function() {
+          this.classList.add('clicked');
+        });
+
+
+         // start java jawaban c
+        const buttond4 = document.getElementById('buttond4');
+        buttond4.addEventListener('click', function() {
+          this.classList.add('clicked');
+        });
+                                                  // END SOAL 4
+                                                  // START SOAL 5
+  // start java jawaban a
+  const buttona5 = document.getElementById('buttona5');
+        buttona5.addEventListener('click', function() {
+          this.classList.add('clicked');
+        });
+
+        // start java jawaban b
+        const buttonb5 = document.getElementById('buttonb5');
+        buttonb5.addEventListener('click', function() {
+          this.classList.add('clicked');
+        });
+
+        // start java jawaban c
+        const buttonc5 = document.getElementById('buttonc5');
+        buttonc5.addEventListener('click', function() {
+          this.classList.add('clicked');
+        });
+
+
+         // start java jawaban c
+        const buttond5 = document.getElementById('buttond5');
+        buttond5.addEventListener('click', function() {
+          this.classList.add('clicked');
+        });
+                                                  // END SOAL 5
+
+
+                                                   // START SOAL 6
+  // start java jawaban a
+  const buttona6 = document.getElementById('buttona6');
+        buttona6.addEventListener('click', function() {
+          this.classList.add('clicked');
+        });
+
+        // start java jawaban b
+        const buttonb6 = document.getElementById('buttonb6');
+        buttonb6.addEventListener('click', function() {
+          this.classList.add('clicked');
+        });
+
+        // start java jawaban c
+        const buttonc6 = document.getElementById('buttonc6');
+        buttonc6.addEventListener('click', function() {
+          this.classList.add('clicked');
+        });
+
+
+         // start java jawaban c
+        const buttond6 = document.getElementById('buttond6');
+        buttond6.addEventListener('click', function() {
+          this.classList.add('clicked');
+        });
+                                                  // END SOAL 6
+          </script>
+
+ 
+        <!-- bagian footer -->
+     </div>
+     <!-- keseluruhan -->
+     <div class="skor">
+
+     <h6>Skor Anda:</h6>
+
+     </div>
+     <a href="homepage.html"><button class="pentil">Back To Home</button></a>
+     <div class="footer"></div>
+    
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masa Kejayaan</title>
+    <link rel="stylesheet" href="masa_kejayaan.css">
+    <link rel="icon" href="../asset/logofawasygy.png">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@600&display=swap');
+      </style>  
+   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@600&family=Kumbh+Sans:wght@500&display=swap');
+  </style>
+</head>
+<body>
+    
+     <div class="landingpage">
+        <div class="nav">
+            <img src="../asset/logo2.png">
+            <a href="homepage.html">Homepage</a>
+            <a href="kategori.html">Kategori</a>
+            <a href="quiz.html">Quiz</a>
+            <input type="search" name="search" placeholder="Search...">
+            <a href="../Landing page/landingpage.html" ><button>Logout</button></a>
+        </div>
+        <!-- bagian nav -->
+        <div class="hero">
+            <h1>Masa Kejayaan  Kerajaan<br>Tarumanegara </h1>
+            <p class="paragraf1">Masa kejayaan Kerajaan Tarumanegara diperkirakan terjadi pada abad ke-5 hingga awal abad ke-7 Masehi. Ini adalah periode ketika kerajaan ini mencapai puncak kekuasaannya dan memiliki pengaruh yang signifikan di wilayah yang sekarang menjadi Indonesia.Kerajaan Tarumanegara memiliki sistem irigasi yang canggih, termasuk kanal-kanal yang dibangun oleh Raja Purnawarman, yang membantu dalam pengembangan pertanian yang subur. Ini berkontribusi pada ekonomi yang kuat dan pertumbuhan penduduk yang signifikan.Kerajaan Tarumanegara diketahui telah mengendalikan sebagian besar wilayah yang sekarang menjadi Jawa Barat, dan mungkin juga memiliki pengaruh di wilayah-wilayah tetangga. Ini menunjukkan keberhasilan mereka dalam memperluas dan menjaga kekuasaan.</p>
+
+            <p class="paragraf2">Masa kejayaan Kerajaan Tarumanegara juga dikenal karena perkembangan budaya dan agama Hindu di wilayah tersebut. Prasasti-prasasti dan temuan arkeologi mencerminkan pengaruh agama Hindu dalam kehidupan masyarakat pada masa itu.Kerajaan Tarumanegara memiliki sistem pemerintahan yang terorganisir dengan baik, yang diatur oleh raja dan pejabat-pejabat kerajaan. Prasasti-prasasti juga mencatat berbagai prestasi dan konstruksi yang dilakukan oleh raja, seperti pembangunan kanal-kanal.</p>
+            <img  class="kontol"  src="../asset/gambarkategori2.png" alt="">
+            
+        </div>
+        <!-- bagian hero -->
+        <div class="komen">
+            <style>
+              /* CSS untuk kolom komentar */
+              .comment-box {
+                width: 400px;
+                margin: 0 auto;
+                padding: 10px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                background-color: #f5f5f5;
+              }
+              
+              /* CSS untuk daftar komentar */
+              .comment-list {
+                list-style-type: none;
+                padding: 0;
+              }
+              
+              /* CSS untuk setiap komentar */
+              .comment {
+                border: 1px solid #ccc;
+                border-radius: 3px;
+                margin-bottom: 5px;
+                padding: 5px;
+                background-color: #fff;
+              }
+
+              .kirim{
+               background-color: black;
+               color: white;
+               border-radius: 10px;
+               font-size: 17px;   
+               font-family: 'Kumbh Sans', sans-serif;
+              }
+
+              .comment-box textarea{
+                  border-radius: 10px;
+              }
+
+              .nama{
+                  border-radius: 5px;
+                  width: 300px;
+              }
+
+              .comment-box textarea{
+                width: 300px;
+              }
+            </style>
+          </head>
+          <body>
+            <div class="comment-box">
+              <h3>Komentar</h3>
+              <form id="comment-form">
+                <label for="nama">Nama:</label><br>
+                <input class="nama" type="text" id="nama" name="nama"><br>
+                <label for="komentar">Komentar:</label><br>
+                <textarea id="komentar" name="komentar" rows="5"></textarea><br>
+                <input type="submit" value="Kirim" class="kirim">
+              </form>
+            </div>
+            <ul class="comment-list" id="comment-list"></ul>
+          
+            <script>
+              // JavaScript untuk menampilkan komentar
+              document.getElementById("comment-form").addEventListener("submit", function(event) {
+                event.preventDefault();
+                var nama = document.getElementById("nama").value;
+                var komentar = document.getElementById("komentar").value;
+                
+                if (nama && komentar) {
+                  var commentList = document.getElementById("comment-list");
+                  var commentItem = document.createElement("li");
+                  commentItem.classList.add("comment");
+                  commentItem.innerHTML = "<strong>" + nama + ":</strong> " + komentar;
+                  commentList.appendChild(commentItem);
+                  
+                  // Bersihkan input
+                  document.getElementById("nama").value = "";
+                  document.getElementById("komentar").value                                                                                                                                                                                                                                                                                                  = "";
+                }
+              });
+            </script>   
+             <a href="sejarah_keruntuhan.html"><button>Next</button></a>
+      </div>
+
+        <!-- bagian bawah hero -->
+       
+        <div class="footer"></div>
+        <!-- bagian footer -->
+     </div>
+     <!-- keseluruhan -->
+
+</body>
+</html>

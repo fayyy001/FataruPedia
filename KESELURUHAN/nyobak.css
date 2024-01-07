@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.kabeh{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 50px 200px 700px 50px;
+    grid-template-areas: 'nav' 'hero' 'main' 'footer';
+ 
+}
+
+.nav{
+    grid-area: nav;
+    display: grid;
+    grid-template-columns: 250px 100px 100px 100px 450px 100px ;
+ grid-template-areas: 'gambar home kategori quiz search logout';
+    align-items: center;
+    justify-content: center;
+}
+
+.nav img{
+    width: 170px;
+    float: left;
+}
+
+.hero{
+    grid-area: hero;
+    align-items: center;
+    justify-content: center;
+}
+
+.main{
+    grid-area: main;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer{
+    grid-area: footer;
+    align-items: center;
+    justify-content: center;
+}   

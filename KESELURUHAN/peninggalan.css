@@ -1,0 +1,213 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.landingpage{
+    display: grid;
+    grid-template-areas: 
+    'nav nav nav nav nav nav'
+    'hero hero hero hero hero hero'
+    'peninggalan1 peninggalan1 peninggalan1 peninggalan1 peninggalan1 peninggalan1'
+    'peninggalan2 peninggalan2 peninggalan2 peninggalan2 peninggalan2 peninggalan2'
+    'peninggalan3 peninggalan3 peninggalan3 peninggalan3 peninggalan3 peninggalan3'
+    'komen komen komen komen komen komen'
+    'footer footer footer footer footer footer';
+}
+
+.nav{
+    grid-area: nav;
+    padding-top: 20px;
+    position: sticky;
+    top: 0;
+    background-color: #e4e4e4;
+    z-index: 2;
+}
+
+.nav img{
+    width: 170px;
+    float: left;
+    
+}
+
+.nav a{
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    font-family: 'Kumbh Sans', sans-serif;
+    margin-left: 50px;
+    padding-top: 8px;
+    
+}
+
+.nav input{
+    border-radius: 20px;
+    height: 30px;
+    padding-left: 20px;
+    margin-left: 100px;
+    width: 30%;
+    font-size: 17px;
+    background-color: transparent;
+}
+
+.nav button{
+    border-radius: 15px;
+    background-color: transparent;
+    font-size: 15px;
+    width: 6%;
+    height: 30px;
+   margin-left: 120px;
+    margin-right: 6=px;
+}
+/* bagian navbar bos */
+
+
+.hero{
+    grid-area: hero
+    
+}
+
+.hero h1{
+    font-family: 'Baloo Paaji 2', sans-serif;
+    margin-left: 50px;
+    margin-top: 70px;
+    font-size: 50px;
+}
+
+.peninggalan1{
+    grid-area: peninggalan1;
+}
+
+.peninggalan1 h3{
+    margin-left: 50px;
+    margin-top: 40px;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 25px;
+}
+
+.paragraf1{
+    margin-left: 50px;
+    font-size: 20px;
+    font-family: 'Kumbh Sans', sans-serif;
+    margin-top: 20px;
+}
+
+
+
+ .peninggalan1 img{
+   
+    margin-left: 1030px;
+    width: 250px;
+    height: 300px;
+ margin-top: -350px;
+ margin-bottom: 200px;
+}
+
+
+/* CSS untuk mengatur tampilan video */
+.peninggalan1 video {
+    display: block;
+    margin: 0 auto;
+    margin-top: -150px;
+    position: sticky;
+}
+
+.peninggalan2 {
+    grid-area: peninggalan2;
+}
+
+.loro{
+    margin-left: 50px;
+    font-size: 20px;
+    font-family: 'Kumbh Sans', sans-serif;  
+    margin-bottom: 50px;
+}
+
+.paragraf2{
+    margin-left: 50px;
+    font-size: 20px;
+    font-family: 'Kumbh Sans', sans-serif;
+    margin-top: 20px;
+}
+
+.peninggalan2 img{
+    width: 300px;
+    height: 300px;
+    margin-left: 1030px;
+    margin-top: -340px;
+ margin-bottom: -90px;
+}
+
+.peninggalan2 video{
+    display: block;
+    margin: 0 auto;
+    margin-top: 95px;
+    position: sticky;
+}
+
+.peninggalan3{
+    grid-area: peninggalan3;
+}
+
+.telu{
+    margin-left: 50px;
+    font-size: 20px;
+    font-family: 'Kumbh Sans', sans-serif;  
+    margin-top: 50px;
+}
+.paragraf3{
+    margin-left: 50px;
+    font-size: 20px;
+    font-family: 'Kumbh Sans', sans-serif;
+    margin-top: 20px;
+}
+
+.peninggalan3 img{
+    margin-left: 1030px;
+    width: 300px;
+    height: 300px;
+    margin-top: -340px;
+    margin-bottom: 30px;
+}
+
+.peninggalan3 video{
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    position: sticky;
+}
+
+
+
+.komen{
+    background-color: transparent;
+    width: 30%;
+    border-radius: 10px;
+    font-family: 'Kumbh Sans', sans-serif;
+    position: relative;
+    margin-left: 70px;
+    top: 50px;
+    grid-area: komen;
+}
+
+.komen button{
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    font-family: 'Kumbh Sans', sans-serif;
+    position: relative;
+    width: 130px;
+    height: 50px;
+    margin-left: 950px;
+    bottom: 150px;
+    border-radius: 15px;
+    font-style: italic;
+}
+
+
+.footer{
+    grid-area: footer;
+    background-color: #949494;
+    height: 70px;
+}   
